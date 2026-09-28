@@ -8,9 +8,9 @@ export default function Footer() {
   return (
     <footer className="bg-[#040404] border-t border-white/10 pt-16 pb-12 text-slate-400 text-xs font-mono">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
-          
+
           {/* Column 1: Brand Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
@@ -129,10 +129,17 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <span className="text-slate-300">Express Highway Inn</span>
+                <a href="https://www.expresshighwayinn.com/" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
+                  <span>Express Highway Inn</span>
+                  <ExternalLink className="w-3 h-3 text-slate-600" />
+                </a>
               </li>
               <li>
-                <span className="text-slate-300">Sampan Auto & Japanese Parts</span>
+                <a href="https://www.sampangroup.com.bd/our-divisions/automotive-fuel-mobility/sampan-auto
+" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors flex items-center gap-1">
+                  <span>Sampan Auto & Japanese Parts</span>
+                  <ExternalLink className="w-3 h-3 text-slate-600" />
+                </a>
               </li>
             </ul>
           </div>

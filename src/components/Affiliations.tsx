@@ -86,12 +86,12 @@ export default function Affiliations() {
     >
       {/* Soft Ambient Warm Glow */}
       <div
-        className="pointer-events-none absolute top-1/2 right-0 -translate-y-1/2 w-[700px] h-[700px] rounded-full opacity-60"
+        className="pointer-events-none absolute top-1/2 right-0 -translate-y-1/2 w-175 h-175 rounded-full opacity-60"
         style={{ background: 'radial-gradient(circle, rgba(197,165,114,0.08) 0%, transparent 70%)' }}
       />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
-        
+
         {/* ─── Section Header (Light Mode) ─── */}
         <div className="affil-header flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16 md:mb-20">
           <div className="max-w-2xl">

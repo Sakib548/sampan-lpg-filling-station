@@ -27,6 +27,16 @@ const GALLERY_ITEMS: GalleryItem[] = [
     features: ['High-Clearance Heavy Truck Canopy', 'Multi-Vehicle Turning Radius', 'High-Flow Dispenser Pumps']
   },
   {
+    id: 'forecourt-architectural-bay',
+    title: 'Architectural Forecourt & Dedicated Pump Bays',
+    subtitle: 'Sampan Filling Station',
+    category: 'forecourt',
+    categoryLabel: 'Forecourt Architecture',
+    src: '/images/gallery/new1.jpg',
+    description: 'Elevated perspective showcasing the station forecourt, distinctive tensile canopy structures over dedicated dispenser islands, and administrative complex.',
+    features: ['Tensile Canopy Architecture', 'Wide Turning Apron', 'Dual Dispensing Islands']
+  },
+  {
     id: 'dispenser-islands',
     title: 'High-Precision Digital Dispensing Islands',
     subtitle: 'Petrol, Octane 95 & High-Speed Diesel',
@@ -35,6 +45,16 @@ const GALLERY_ITEMS: GalleryItem[] = [
     src: '/images/gallery/Filling-Station-2.jpg',
     description: 'State-of-the-art calibrated digital fuel dispensers with automated auto-cut nozzles, emergency shutoffs, and wide multi-bay approach lanes.',
     features: ['BERC Calibrated Metering', 'Zero-Spill Nozzles', 'Quad-Vehicle Simultaneous Service']
+  },
+  {
+    id: 'octane-bay-complex',
+    title: 'Dedicated Octane Bay & Modern Station Complex',
+    subtitle: 'Sampan Fueling & Admin Complex',
+    category: 'forecourt',
+    categoryLabel: 'Refueling Bay & Fleet',
+    src: '/images/gallery/new2.jpg',
+    description: 'Ground-level view of the heavy-duty canopy truss, dedicated Octane dispensing unit, station road supply tanker, and contemporary brick-and-glass administrative building.',
+    features: ['High-Octane Dedicated Island', 'Sampan Supply Tanker', 'Administrative Building']
   },
   {
     id: 'lpg-bulk-storage',

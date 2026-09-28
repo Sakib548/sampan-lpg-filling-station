@@ -96,14 +96,13 @@ export default function Navbar({
 
       {/* Main Navigation Bar */}
       <nav
-        className={`px-4 lg:px-8 transition-all duration-300 ${
-          scrolled
-            ? 'py-2.5 bg-[#080808]/95 backdrop-blur-xl border-b border-white/10 shadow-2xl'
-            : 'py-3.5 bg-[#080808]/80 backdrop-blur-md border-b border-white/5'
-        }`}
+        className={`px-4 lg:px-8 transition-all duration-300 ${scrolled
+          ? 'py-2.5 bg-[#080808]/95 backdrop-blur-xl border-b border-white/10 shadow-2xl'
+          : 'py-3.5 bg-[#080808]/80 backdrop-blur-md border-b border-white/5'
+          }`}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          
+
           {/* Logo with official 2-in-1 images */}
           <a href="#" className="flex items-center gap-2.5 sm:gap-3 group">
             <div className="flex items-center -space-x-2 shrink-0">
@@ -135,7 +134,7 @@ export default function Navbar({
                   2-in-1
                 </span>
               </div>
-              <p className="text-[10px] sm:text-[11px] text-primary font-sans flex items-center gap-1">
+              <p className="text-[10px] hidden sm:block text-primary font-sans flex items-center gap-1">
                 <MapPin className="w-3 h-3 text-red-400 shrink-0" />
                 <span>Dhaka-Khulna Highway &bull; Beside Sampan Highway Inn</span>
               </p>
@@ -188,10 +187,10 @@ export default function Navbar({
               href="https://maps.app.goo.gl/hkaLqFGVGgrPBcqa8"
               target="_blank"
               rel="noreferrer"
-              className="px-4 py-2 rounded-xl text-xs font-bold text-black bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-amber-300 hover:to-yellow-300 shadow-[0_0_20px_rgba(197,165,114,0.35)] transition-all flex items-center gap-1.5 active:scale-95 font-sans"
+              className="px-4 py-2 hidden sm:block rounded-xl text-xs font-bold text-black bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-amber-300 hover:to-yellow-300 shadow-[0_0_20px_rgba(197,165,114,0.35)] transition-all flex items-center gap-1.5 active:scale-95 font-sans"
             >
               <Navigation className="w-3.5 h-3.5" />
-              <span>Get Directions</span>
+              <span >Get Directions</span>
             </a>
 
             {/* Mobile Hamburger */}
@@ -274,6 +273,6 @@ export default function Navbar({
           </div>
         )}
       </nav>
-    </header>
+    </header >
   );
 }
