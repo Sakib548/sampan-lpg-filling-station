@@ -71,23 +71,23 @@ export default function HighwayInnBenefits() {
       customBadgeLogo: '/images/logo/whitehouse.webp',
       icon: <BedDouble className="w-5 h-5 text-amber-600" />,
     },
-    {
-      title: 'Towing & Roadside Assistance',
-      tagline: '24/7 nearby highway support for breakdowns',
-      desc: 'Rapid-response vehicle towing, tire recovery, and jump-start support active on the highway corridor.',
-      image: '/images/nearby/car-recovery-vehicle-transporting-yellow-car.jpg',
-      customBadgeLogo: '/images/logo/towing.webp',
-      icon: <Truck className="w-5 h-5 text-amber-600" />,
-    },
-    {
-      title: 'Sampan Auto & Japanese Parts',
-      tagline: 'Car sales, imports & diagnostic support',
-      desc: 'Authorized automobile sales, genuine Japanese spare parts, engine diagnostic check-ups, and automotive fluids.',
-      image: '/images/nearby/sampan-auto.jpg',
-      isLogo: true,
-      customBadgeLogo: '/images/logo/sampanauto.png',
-      icon: <Wrench className="w-5 h-5 text-amber-600" />,
-    },
+    // {
+    //   title: 'Towing & Roadside Assistance',
+    //   tagline: '24/7 nearby highway support for breakdowns',
+    //   desc: 'Rapid-response vehicle towing, tire recovery, and jump-start support active on the highway corridor.',
+    //   image: '/images/nearby/car-recovery-vehicle-transporting-yellow-car.jpg',
+    //   customBadgeLogo: '/images/logo/towing.webp',
+    //   icon: <Truck className="w-5 h-5 text-amber-600" />,
+    // },
+    // {
+    //   title: 'Sampan Auto & Japanese Parts',
+    //   tagline: 'Car sales, imports & diagnostic support',
+    //   desc: 'Authorized automobile sales, genuine Japanese spare parts, engine diagnostic check-ups, and automotive fluids.',
+    //   image: '/images/nearby/sampan-auto.jpg',
+    //   isLogo: true,
+    //   customBadgeLogo: '/images/logo/sampanauto.png',
+    //   icon: <Wrench className="w-5 h-5 text-amber-600" />,
+    // },
   ];
 
   return (
@@ -117,7 +117,7 @@ export default function HighwayInnBenefits() {
         </div>
 
         {/* Benefits Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
           {benefits.map((item, idx) => (
             <div
               key={idx}
