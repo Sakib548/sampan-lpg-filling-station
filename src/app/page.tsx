@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import SmoothScroll from '@/components/SmoothScroll';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import FuelQuickStrip from '@/components/FuelQuickStrip';
 import FuelPriceBoard from '@/components/FuelPriceBoard';
 import FuelServicesSection from '@/components/FuelServicesSection';
 import HighwayInnBenefits from '@/components/HighwayInnBenefits';
@@ -143,11 +142,8 @@ export default function Home() {
         />
 
         <main className="flex-1">
-          {/* 2. Hero Section: "One Stop. Every Mile. Every Fuel." */}
+          {/* 2. Hero Section: "One Stop. Every Mile. Every Fuel." (Includes Quick Energy Strip) */}
           <Hero />
-
-          {/* Quick Fuel & Energy Strip immediately after Hero */}
-          <FuelQuickStrip />
 
           {/* 3. Live Fuel Price Board */}
           <FuelPriceBoard

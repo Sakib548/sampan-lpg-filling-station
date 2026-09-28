@@ -3,10 +3,11 @@
 import React from 'react';
 import Image from 'next/image';
 import { Navigation, ArrowRight, ChevronDown, Camera, Sparkles, CheckCircle2 } from 'lucide-react';
+import FuelQuickStrip from '@/components/FuelQuickStrip';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen min-h-[100dvh] w-full flex flex-col justify-center items-center pt-28 sm:pt-32 pb-16 overflow-hidden bg-[#080808]">
+    <section className="relative min-h-screen min-h-[100dvh] w-full flex flex-col justify-between items-center pt-24 sm:pt-28 pb-8 sm:pb-12 overflow-hidden bg-[#080808]">
       {/* Background ambient glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-primary/[0.09] blur-[150px] pointer-events-none rounded-full" />
       <div className="absolute top-1/3 right-10 w-[320px] h-[320px] bg-amber-500/10 blur-[130px] pointer-events-none rounded-full" />
@@ -94,7 +95,7 @@ export default function Hero() {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-base sm:text-lg md:text-xl text-slate-300 font-light leading-relaxed max-w-3xl mb-8">
+        <p className="text-base sm:text-lg md:text-xl text-slate-300 font-light leading-relaxed max-w-3xl mb-4 sm:mb-6">
           Welcome to the unified highway energy destination. Power your journey with certified Petrol, Octane, and Diesel at <strong className="text-white font-medium">Sampan Filling Station</strong>, or refill high-purity, pressurized Autogas at <strong className="text-amber-300 font-medium">Sampan LPG Filling Station</strong> — with 24/7 dining, rest, and express roadside service.
         </p>
 
@@ -146,11 +147,10 @@ export default function Hero() {
         </div> */}
       </div>
 
-      {/* Down Scroll Indicator */}
-      {/* <div className="relative z-10 mt-auto pt-6 text-slate-500 flex flex-col items-center gap-1.5 animate-bounce">
-        <span className="text-[10px] font-mono tracking-widest uppercase">Scroll to explore</span>
-        <ChevronDown className="w-4 h-4 text-primary" />
-      </div> */}
-    </section >
+      {/* Quick Fuel & Energy Strip merged into Hero (elevated from the very bottom) */}
+      <div className="w-full relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-4 sm:mb-6">
+        <FuelQuickStrip />
+      </div>
+    </section>
   );
 }
